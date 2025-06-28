@@ -1,9 +1,13 @@
 {
   "name": "@isengin/touch-gemini-cli",
-  "version": "0.0.0",
+  "version": "0.0.0-rev",
   "files": [
     "dist"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:ikhlas-firlana/touch-gemini-cli.git"
+  },
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "exports": {

@@ -1,0 +1,38 @@
+{
+  "name": "@isengin/touch-gemini-cli",
+  "version": "0.0.0",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "require": "./dist/index.js",
+      "module": "./dist/index.mjs",
+      "types": "./dist/index.d.ts"
+    },
+    "./*": {
+      "require": "./dist/*.js",
+      "module": "./dist/*.mjs",
+      "types": "./dist/*.d.ts"
+    }
+  },
+  "engines": {
+    "node": "^20"
+  },
+  "scripts": {
+    "build": "tsup",
+    "test": "npm run jest",
+    "jest": "jest --collectCoverage --detectOpenHandles --config jest.config.ts"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "@jest/globals": "^30.0.3",
+    "jest": "^30.0.3",
+    "ts-jest": "^29.4.0",
+    "ts-node": "^10.9.2",
+    "tsup": "^8.5.0",
+    "typescript": "^5.8.3"
+  }
+}

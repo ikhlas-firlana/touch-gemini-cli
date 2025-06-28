@@ -1,0 +1,10 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "compilerOptions": {
+    "lib": ["ES2015"],
+    "types": ["jest", "node"],
+    "esModuleInterop": true
+  },
+  "exclude": ["node_modules"],
+  "include": ["."]
+}
